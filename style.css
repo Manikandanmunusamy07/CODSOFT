@@ -58,13 +58,17 @@ nav ul li a:hover {
 }
 
 .profile-pic {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  border: 4px solid #0077b6;
   object-fit: cover;
-  margin-bottom: 20px;
+  object-position: 50% 15%; /* X=50% (center), Y=25% (moves image down) */
+  border: 4px solid #2c3e50;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+
+
 
 #hero h2 {
   font-size: 28px;
