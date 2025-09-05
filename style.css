@@ -105,6 +105,48 @@ nav ul li a:hover {
   color: #444;
 }
 
+
+/* ===== SKILL section ===== */
+
+#skills {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#skills h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.skills-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.badge {
+  background: #3498db;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.badge:hover {
+  background: #2980b9;
+  transform: translateY(-3px);
+}
+
+
+
 /* ===== Section Styles ===== */
 section {
   padding: 60px 20px;
