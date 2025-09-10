@@ -6,6 +6,8 @@
   font-family: "Poppins", sans-serif;
 }
 
+
+
 body {
   background: #f9f9fb;
   color: #333;
@@ -282,6 +284,43 @@ nav ul li a:hover {
 }
 
 
+/* ===== Resume Section ===== */
+
+
+#resume {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+#resume h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#resume p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+#resume .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #0073e6;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+#resume .btn:hover {
+  background: #005bb5;
+}
+
+
 
 
 /* ===== Section Styles ===== */
@@ -335,4 +374,80 @@ footer p {
 .footer-links a img:hover {
   transform: scale(1.2); /* zoom effect */
 }
+
+
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  #about, #skills, #projects, #resume, #contact {
+    padding: 40px 15px;
+  }
+
+  .project-item {
+    width: 100%; /* Projects full width */
+    margin-bottom: 20px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #skills .skills-list {
+    display: block; /* Stack skills vertically */
+  }
+
+  .contact-item {
+    flex-direction: row; 
+    justify-content: flex-start;
+  }
+
+  .contact-item a {
+    font-size: 14px;
+  }
+
+  #resume .btn {
+    width: 100%; /* Full width button on mobile */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
 
