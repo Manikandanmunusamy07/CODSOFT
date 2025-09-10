@@ -282,6 +282,8 @@ nav ul li a:hover {
 }
 
 
+
+
 /* ===== Section Styles ===== */
 section {
   padding: 60px 20px;
@@ -309,9 +311,28 @@ section h2 {
 
 /* ===== Footer ===== */
 footer {
+  background: #111;
+  color: #fff;
   text-align: center;
-  padding: 20px;
-  background: #f1f1f1;
-  font-size: 14px;
-  margin-top: 40px;
+  padding: 20px 10px;
+  margin-top: 50px;
 }
+
+footer p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a img {
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-links a img:hover {
+  transform: scale(1.2); /* zoom effect */
+}
+
