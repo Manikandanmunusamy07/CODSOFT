@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manikandan M - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="images/favicon.png" type="png">
-
-  
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Manikandan M - Portfolio</title>
+ <!-- Link your stylesheet -->
+ <link rel="stylesheet" href="style.css" />
+ <!-- Correct favicon tag -->
+ <link rel="icon" href="images/favicon.png" type="image/png" />
 </head>
 <body>
-  <!-- Header / Navbar -->
-  <header>
-    <nav>
-      <h1>Manikandan M</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <img src="images/myphoto.jpg" alt="Your Photo" class="profile-pic">
-    <h2>Hi, I'm Manikandan 👋</h2>
-    <p>Aspiring Web Developer | MCA Student</p>
-  </section>
+<!-- Header / Navbar -->
+<header>
+  <nav>
+  <h1>Manikandan M</h1>
+  <div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- About Section -->
+</header>
+
+<!-- Hero Section -->
+<section id="hero">
+  <img src="images/myphoto.jpg" alt="Your Photo" class="profile-pic" />
+  <h2>Hi, I'm Manikandan 👋</h2>
+  <p>Aspiring Web Developer | MCA Student</p>
+</section>
+
+<!-- About Section -->
 <section id="about">
   <div class="container">
     <h2>About Me</h2>
     <p>
       I am <strong>Manikandan M</strong>, currently pursuing a 
       <strong>Master of Computer Applications (MCA)</strong> at 
-      Sri Manakula Vinayagar Engineering College, Pondicherry.  
+      Sri Manakula Vinayagar Engineering College, Pondicherry.   
       I have a strong interest in <strong>web development</strong> and I am
-      building my expertise in <strong>HTML, CSS, JavaScript, PHP, and MySQL</strong>.  
+      building my expertise in <strong>HTML, CSS, JavaScript, PHP, and MySQL</strong>.   
       My goal is to apply my technical skills to create efficient, user-friendly
       applications and to continuously enhance my knowledge in software development.
     </p>
   </div>
 </section>
 
-
-  <!-- Skills Section -->
+<!-- Skills Section -->
 <section id="skills">
   <div class="container">
     <h2>Skills</h2>
@@ -63,10 +69,8 @@
   </div>
 </section>
 
-
-
-  <!-- Projects Section -->
-  <section id="projects">
+<!-- Projects Section -->
+<section id="projects">
   <div class="container">
     <h2>Projects</h2>
     <div class="projects-grid">
@@ -74,92 +78,81 @@
       <div class="project-card">
         <h3>Steel Indian Company Website</h3>
         <p>A professional website created for Steel Indian Company to showcase their products and services. 
-           Developed using HTML, CSS, and JavaScript with a focus on responsive design, modern layout, and clean navigation.</p>
+        Developed using HTML, CSS, and JavaScript with a focus on responsive design, modern layout, and clean navigation.</p>
       </div>
 
       <div class="project-card">
         <h3>Online Bus Reservation System</h3>
         <p>A complete web application for booking and managing bus tickets online. 
-           Built using PHP and MySQL, featuring user registration, ticket booking, payment simulation, 
-           and an admin dashboard for route and schedule management.</p>
+        Built using PHP and MySQL, featuring user registration, ticket booking, payment simulation, 
+        and an admin dashboard for route and schedule management.</p>
       </div>
 
       <div class="project-card">
         <h3>NutriCart Project</h3>
         <p>An e-commerce platform designed for ordering grocery and nutrition products online. 
-           Includes product catalog, shopping cart, and checkout flow. 
-           Built with HTML, CSS, JavaScript, and PHP for dynamic functionality and a smooth user experience.</p>
+        Includes product catalog, shopping cart, and checkout flow. 
+        Built with HTML, CSS, JavaScript, and PHP for dynamic functionality and a smooth user experience.</p>
       </div>
 
       <div class="project-card">
         <h3>Personal Portfolio Website</h3>
         <p>A responsive portfolio website to highlight my skills, projects, and achievements. 
-           Created using HTML, CSS, and JavaScript with a modern professional theme. 
-           This site itself is part of the showcased work.</p>
+        Created using HTML, CSS, and JavaScript with a modern professional theme. 
+        This site itself is part of the showcased work.</p>
       </div>
 
     </div>
   </div>
 </section>
 
-  
-
-
-  <!-- Resume Section -->
+<!-- Resume Section -->
 <section id="resume">
   <h2>Resume</h2>
   <p>You can download my resume to know more about my education, skills, and experience.</p>
   <a href="resume.pdf" download class="btn">Download Resume</a>
 </section>
 
-
-  <!-- Contact Section -->
-
+<!-- Contact Section -->
 <section id="contact" class="contact">
   <h2>Contact Me</h2>
   <p>Feel free to reach out through the form below or via my email.</p>
-
-<form action="https://formspree.io/f/mblzadwp" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
+  <form action="https://formspree.io/f/mblzadwp" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 
   <div class="contact-info">
-  <p>
-    <a href="mailto:manikandanmunusamy07@gmail.com" target="_blank" style="text-decoration: none; color: inherit;">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
-      manikandanmunusamy07@gmail.com
-    </a>
-  </p>
-
-  <p>
-    <a href="https://www.linkedin.com/in/manikandan-m-823893363" target="_blank" style="text-decoration: none; color: inherit;">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
-      linkedin.com/in/manikandan
-    </a>
-  </p>
-
-  <p>
-    <a href="tel:+919876543210" style="text-decoration: none; color: inherit;">
-      <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
-      +91 93636 72753
-    </a>
-  </p>
-</div>
-
-  
+    <p>
+      <a href="mailto:manikandanmunusamy07@gmail.com" target="_blank" style="text-decoration: none; color: inherit;">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
+        manikandanmunusamy07@gmail.com
+      </a>
+    </p>
+    <p>
+      <a href="https://www.linkedin.com/in/manikandan-m-823893363" target="_blank" style="text-decoration: none; color: inherit;">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
+        linkedin.com/in/manikandan
+      </a>
+    </p>
+    <p>
+      <a href="tel:+919876543210" style="text-decoration: none; color: inherit;">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
+        +91 93636 72753
+      </a>
+    </p>
+  </div>
 </section>
 
-
-  <!-- Footer -->
- <footer>
- <p>© <span id="year"></span> Manikandan M | All Rights Reserved</p>  <div class="footer-links">
+<!-- Footer -->
+<footer>
+  <p>© <span id="year"></span> Manikandan M | All Rights Reserved</p>
+  <div class="footer-links">
     <a href="https://github.com/Manikandanmunusamy07" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="GitHub" width="30" height="30" style="filter: invert(1);">
-</a>
-
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="GitHub" width="30" height="30" style="filter: invert(1);">
+    </a>
     <a href="https://www.linkedin.com/in/manikandan-m-823893363" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30" height="30">
     </a>
@@ -169,8 +162,6 @@
   </div>
 </footer>
 
-
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

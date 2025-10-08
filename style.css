@@ -453,3 +453,57 @@ footer p {
     font-size: 14px;
   }
 }
+
+
+
+/* Enable smooth scrolling for all anchor navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add scroll margin to avoid fixed header overlap */
+section {
+  scroll-margin-top: 70px; /* Adjust based on your header height */
+}
+
+/* Hamburger menu styles - hidden by default */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1100; /* above nav menu */
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #0077b6; /* match navbar link color */
+  border-radius: 2px;
+}
+
+/* Hide nav links and show hamburger on mobile */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9fb; /* light background */
+    position: absolute;
+    top: 65px; /* below header */
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    width: 180px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
